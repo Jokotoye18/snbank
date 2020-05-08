@@ -22,4 +22,4 @@ The following are the feature of SN banking system.
 5. If the user select the logout options, the user is logged out and he will be retur
    ed to the login and close app options
   
-6. If the user select the close app option  the app is termnated.
+6. If the user select the close app option  the app is terminated.
