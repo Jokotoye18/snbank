@@ -86,8 +86,8 @@ def welcome():
                     customers = customer_file.readlines()
                     for customer in customers:
                         customer = customer.split(', ')
-                        customer = (" ").join(customer).strip()
-                        customer = customer.split(' ')
+                        customer = (", ").join(customer).strip()
+                        customer = customer.split(', ')
                         if acc_number == customer[4]:
                             print('Your account details is below :: ')
                             print(f'Account Name: {customer[0]}')
