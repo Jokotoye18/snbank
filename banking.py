@@ -67,14 +67,18 @@ def welcome():
                 account_name = input('Enter your account name :: ')
                 opening_balance = get_opening_balance()
                 acount_type = get_account_type()
-                account_email = input('Enter a valid Mail address.')
+                account_mail_address = input('Enter a valid Mail address.')
                 account_number = get_account_number()
-                details = {'account_name': account_name, 'opening_balance': opening_balance, 'acount_type': acount_type,
-                           'account_email': account_email, 'account_number': account_number}
-                print(f'Account created successfully! This is your Account details : {details}')
+                
+                print(f'Account name is {account_name}')
+                print(f'Account balance is {opening_balance}')
+                print(f'Account type is {acount_type}')
+                print(f'Account mail is {account_mail_address}')
+                print(f'Account number is {account_number}')
                 with open('customer.txt', 'a') as customer_file:
                     customer_file.write(
-                        f'{account_name}, {opening_balance}, {acount_type}, {account_email}, {account_number}\n')
+                        f'{account_name}, {opening_balance}, {acount_type}, {account_mail_address}, {account_number}\n')
+                welcome()
 
 
             elif prompt == 2:
