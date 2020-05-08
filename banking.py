@@ -76,9 +76,8 @@ def welcome():
                 print(f'Account mail is {account_mail_address}')
                 print(f'Account number is {account_number}')
                 with open('customer.txt', 'a') as customer_file:
-                    customer_file.write(
-                        f'{account_name}, {opening_balance}, {acount_type}, {account_mail_address}, {account_number}\n')
-                welcome()
+                    customer_file.write(f'{account_name}, {opening_balance}, {acount_type}, {account_mail_address}, {account_number}\n')
+                    return welcome()
 
 
             elif prompt == 2:
