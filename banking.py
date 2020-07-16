@@ -22,12 +22,12 @@ def get_account_type():
         return prompt
 
 def get_account_number():
-    password = ''
+    account = ''
     for x in range(1, 11):
         key = random.randint(0, 9)
         key = str(key)
-        password += key
-    return password
+        account += key
+    return account
 
 def get_login_time():
     now = datetime.datetime.now()
